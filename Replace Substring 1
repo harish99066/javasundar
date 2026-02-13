@@ -1,0 +1,17 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+     Scanner s=new Scanner(System.in);
+        String t1=s.nextLine();
+        String t2=s.nextLine();
+        int i=s.nextInt();
+        int j=s.nextInt();
+        StringBuilder b=new StringBuilder(t1);
+        b.replace(i,j,t2);
+        System.out.println(b);
+        
+    }
+}
