@@ -1,0 +1,34 @@
+import java.io.*;
+import java.util.*;
+
+class Student{
+    void Stu(int n){
+       System.out.println("Roll no:"+n);
+    }
+}
+class Exam  extends Student{
+    void Exa(int m){
+        if(m>=50){
+            System.out.println("Result:Pass");
+        }
+        else{
+            System.out.println("Result:Fail");
+        }     
+   }
+}
+class Result extends Exam{
+    void Res(){
+        System.out.println("");
+}
+}
+public class Main{
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+         Result r=new Result();
+        int n=s.nextInt();
+        int m=s.nextInt();
+        r.Stu(n);
+        r.Exa(m);
+        r.Res();
+ }
+}
