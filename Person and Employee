@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+class Person {
+    void Nam(String n){
+        System.out.println("Name:"+n);
+    }
+}
+    class Empl extends Person{
+        void Salar(double d){
+             System.out.println("Salary:"+d);
+            
+        }
+    }
+public class Main{
+public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        Empl E=new Empl();
+        String n=s.nextLine();
+        double k=s.nextInt();
+        E.Nam(n);
+        E.Salar(k);
+        
+        
+    }
+}
